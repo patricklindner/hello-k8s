@@ -15,6 +15,12 @@ app.get('/', async (req, res) => {
     }
 })
 
+app.use((req, res) => {
+    console.log("404 at", req.url)
+    res.status(404).send("Not found.")
+
+})
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })

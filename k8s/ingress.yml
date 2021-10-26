@@ -13,6 +13,13 @@ spec:
   rules:
     - http:
         paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: hello-enginx
+              port:
+                number: 3000
         - path: /first
           pathType: Prefix
           backend:
