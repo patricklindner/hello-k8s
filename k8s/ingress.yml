@@ -4,7 +4,7 @@ metadata:
   name: ccas-ingress
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web
-    traefik.ingress.kubernetes.io/rewrite-target: /first
+    traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   defaultBackend:
     service:
